@@ -1,0 +1,106 @@
+body {
+    background-color: #424874;
+}
+/* ffa41b */
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #ffa41b;
+    
+}
+
+.header {
+    width: 30%;
+
+    margin: 10px auto;
+    animation-name: animate-text;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.header .k-element {
+    display: inline-block;
+    color: teal;
+}
+
+.clock {
+    width: 60%;
+    height: 450px;
+    margin: 60px auto;
+    /* background-color: white; */
+    padding: 10px;
+}
+.clock-face {
+    width: 40%;
+    height: 315px;
+    border: 15px solid #ffa41b;
+    padding: 20px;
+    border-radius: 20%;
+    margin: 30px auto;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.hand {
+    height: 1px;
+    width: 45%;
+    border: solid #ffa41b;
+    background-color: #ffa41b;
+    position: absolute;
+    top: 167.5px;
+    left: 5%;
+    transform-origin: 100%;
+    /* transform: rotate(90deg); */
+    transition: all 0.05ms;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.hand.hour-hand {
+    background-color: teal;
+    height: 5px;
+    width: 30%;
+    border: solid #ffa41b;
+    position: absolute;
+    top: 167.5px;
+    left: 20%;
+    transform-origin: 100%;
+    /* transform: rotate(90deg); */
+    transition: all 0.05ms;
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.510, 1.635)
+   
+}
+
+.hand.minute-hand {
+    background-color: teal;
+    height: 2px;
+    width: 40%;
+    border: solid #ffa41b;
+    position: absolute;
+    top: 167.5px;
+    left: 10%;
+    transform-origin: 100%;
+    /* transform: rotate(90deg); */
+    transition: all 0.05ms;
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.510, 1.635)
+}
+
+.hand.second-hand {
+    background-color: teal;
+}
+
+@keyframes animate-text{
+   from{
+     
+   }
+   to {
+
+   }
+
+}
